@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  go-server:
+    env_file: ./.env
+    command: "bash bin/build_and_execute"
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./:/go/src/go-server-boilerplate"
+    build:
+      context: .
+      dockerfile: ./Dockerfile

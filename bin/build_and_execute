@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /go/src/go-server-boilerplate/bin
+./build
+cd /go/src/go-server-boilerplate/bin
+./execute
